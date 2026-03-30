@@ -32,13 +32,20 @@ const Home: React.FC<HomeProps> = ({ lang, products, onAddToCart }) => {
   return (
     <main className="pt-32 animate-fadeIn">
       {/* Hero Section */}
-      <section className="text-center py-24 px-6 relative overflow-hidden">
-         <div className="absolute inset-0 z-[-1] opacity-20">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
-         </div>
-         <div className="max-w-4xl mx-auto">
-            <h2 className="text-5xl md:text-8xl font-bold mb-8 tracking-tighter text-white">{t.heroTitle}</h2>
-            <p className="text-xl md:text-2xl gold-text opacity-90 mb-14 font-medium">{t.heroSubtitle}</p>
+      <section className="text-center py-48 px-6 relative overflow-hidden min-h-[80vh] flex items-center justify-center">
+         <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline 
+            className="absolute inset-0 w-full h-full object-cover z-0"
+         >
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-olive-oil-dripping-from-an-olive-tree-4355-large.mp4" type="video/mp4" />
+         </video>
+         <div className="absolute inset-0 z-10 bg-black/50"></div>
+         <div className="max-w-4xl mx-auto relative z-20">
+            <h2 className="text-5xl md:text-8xl font-bold mb-8 tracking-tighter text-white drop-shadow-2xl">{t.heroTitle}</h2>
+            <p className="text-xl md:text-2xl gold-text opacity-90 mb-14 font-medium drop-shadow-lg">{t.heroSubtitle}</p>
             <button 
               onClick={scrollToProducts}
               className="gold-bg text-black px-14 py-5 rounded-full font-bold shadow-gold hover:scale-105 transition-transform uppercase tracking-widest text-xs"
