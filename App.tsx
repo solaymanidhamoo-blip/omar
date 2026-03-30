@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoBackground from './path-to-your/VideoBackground'; // Ensure this path is correct
+import VideoBackground from './components/VideoBackground';
 
 const Home = () => {
     return (
