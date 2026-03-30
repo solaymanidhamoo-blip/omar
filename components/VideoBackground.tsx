@@ -22,7 +22,7 @@ const VideoBackground = () => {
     return (
         <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
             <video ref={videoRef} autoPlay muted loop style={{ position: 'absolute', top: '50%', left: '50%', minWidth: '100%', minHeight: '100%', width: 'auto', height: 'auto', transform: 'translate(-50%, -50%)', zIndex: -1 }}>
-                <source src="path_to_your_video.mp4" type="video/mp4" />
+                <source src="omar/components/video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div style={{ position: 'relative', zIndex: 1, color: 'white', textAlign: 'center' }}>
