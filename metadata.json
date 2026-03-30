@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Izouran Bio - Premium Organic Oils",
+  "description": "A high-end platform for authentic Moroccan olive and argan oils from the Atlas Mountains with a dedicated Manager (Gérant) suite.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
