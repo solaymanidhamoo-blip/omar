@@ -33,17 +33,17 @@ const Home: React.FC<HomeProps> = ({ lang, products, onAddToCart }) => {
     <main className="pt-32 animate-fadeIn">
       {/* Hero Section */}
       <section className="text-center py-48 px-6 relative overflow-hidden min-h-[80vh] flex items-center justify-center">
-         <video 
-            autoPlay 
-            muted 
-            loop 
-            playsInline 
-            className="absolute inset-0 w-full h-full object-cover z-0"
-         >
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-olive-oil-dripping-from-an-olive-tree-4355-large.mp4" type="video/mp4" />
-         </video>
-         <div className="absolute inset-0 z-10 bg-black/50"></div>
-         <div className="max-w-4xl mx-auto relative z-20">
+         <div className="absolute inset-0 w-full h-full z-10 overflow-hidden pointer-events-none bg-black">
+            <iframe
+               src="https://www.youtube.com/embed/iYuYjIdNI3E?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=iYuYjIdNI3E&vq=hd1080"
+               className="absolute w-[300vw] h-[300vh] md:w-[150vw] md:h-[150vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-70"
+               frameBorder="0"
+               allow="autoplay; encrypted-media"
+               allowFullScreen
+            ></iframe>
+         </div>
+         <div className="absolute inset-0 z-20 bg-black/50"></div>
+         <div className="max-w-4xl mx-auto relative z-30">
             <h2 className="text-5xl md:text-8xl font-bold mb-8 tracking-tighter text-white drop-shadow-2xl">{t.heroTitle}</h2>
             <p className="text-xl md:text-2xl gold-text opacity-90 mb-14 font-medium drop-shadow-lg">{t.heroSubtitle}</p>
             <button 
